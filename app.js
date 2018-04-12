@@ -12,9 +12,8 @@ const report = require('./routes/report')
 // defines the express engine what renderer to use
 app.set('view engine', 'pug');
 
-
 app.get('/', ( req, res ) => {
-    res.render('main');
+    res.render('index');
 });
 
 app.use('/report', report);
