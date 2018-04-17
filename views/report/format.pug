@@ -1,0 +1,9 @@
+extends ../layout
+
+block content
+    h3 Format a Report
+    p Enter the fields below to create a simple layout
+    form(action='format', method='post')
+        label Enter the quote here
+            input(type='text', name='quote')
+            button(type='submit') Enter Quote

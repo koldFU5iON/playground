@@ -1,4 +1,9 @@
 extends ../layout
 
 block content
-    p welcome to reports
+    h3 Welcome to the reports page.
+    p Below you can find the different ways to handle reports. 
+    a(href='format') Format Layout
+    if quote
+        h2 Quotes listed below:
+            p first quote " #{quote} "
